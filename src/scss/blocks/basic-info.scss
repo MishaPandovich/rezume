@@ -1,0 +1,42 @@
+.basic-info__userpic {
+    width: 150px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 7%;
+
+    border-radius: 50%;
+    border: 1px solid #006cb4;
+}
+
+.basic-info__img {
+	width: 150px;
+    height: 150px;
+    background: #006cb4;
+    border-radius: 50%;
+}
+
+.basic-info__name {
+	margin-top: 5%;
+	margin-bottom: 0;
+    font-family: 'MyriadPro-LightSemiExt', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.basic-info__surname {
+    margin: 0;
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.basic-info__position {
+    margin-top: 5px;
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}

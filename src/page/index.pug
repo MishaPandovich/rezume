@@ -3,9 +3,6 @@ html(lang="ru-RU")
 	head
 		link(href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Source+Sans+Pro" rel="stylesheet")
 		link(href="app.css" rel="stylesheet")
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-	body
-		
-		//include components/search
-		//include components/calendar
-		//include components/videoplayer
+	body.flex-wrapper
+		include components/sidebar/sidebar
+		include components/content/content

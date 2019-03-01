@@ -1,0 +1,26 @@
+.pie-wrapper {
+	margin-top: 8%;
+}
+
+.pie-wrapper__title {
+	/*общие стили*/
+	margin-bottom: 5%;
+	font-family: 'Lato', sans-serif;
+	font-size: 21px;
+	line-height: 42px;
+	color: #4f4f4f;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pie-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+	.pie-inner {
+		flex-wrap: wrap;
+	}
+}

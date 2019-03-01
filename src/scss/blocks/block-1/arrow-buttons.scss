@@ -1,0 +1,84 @@
+.arrow-buttons__title {
+	margin-top: 10%;
+	/*общие стили*/
+	margin-bottom: 5%;
+	font-family: 'Lato', sans-serif;
+	font-size: 21px;
+	line-height: 42px;
+	color: #4f4f4f;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.arrow-buttons__inner { 
+    width: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.arrow-button {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border: 3px solid #4eb7a8;
+	background: transparent;
+	border-radius: 50%;
+	font-size: 0;
+	outline: none;
+	cursor: pointer;
+
+	&::before {
+	    content: "";
+	    position: absolute;
+	    width: 18px;
+	    height: 30px;
+	}
+
+	&:hover {
+		background: #4eb7a8;
+	}
+
+	&:focus {
+		border-color: #e5e5e5;
+		background: #e5e5e5;
+	}
+}
+
+.arrow-button--prev {
+	&::before {
+		content: "";
+		top: 14px;
+	    left: 18px;
+		background: url('../images/left.png') no-repeat;
+	}
+
+	&:hover::before {
+		content: "";
+		background: url('../images/left-hover.png') no-repeat;
+	}
+
+	&:focus::before {
+		background: url('../images/left-hover.png') no-repeat;
+	}
+}
+
+.arrow-button--next {
+	&::before {
+		content: "";
+		top: 14px;
+    	left: 22px;
+		background: url('../images/rigth.png') no-repeat;
+	}
+
+	&:hover::before {
+		content: "";
+		background: url('../images/rigth-hover.png') no-repeat;
+	}
+
+	&:focus::before {
+		background: url('../images/rigth-hover.png') no-repeat;
+	}
+
+}

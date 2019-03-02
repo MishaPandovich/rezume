@@ -1,5 +1,28 @@
-.education__list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.education__title {
+	&::before {
+		content: "";
+	    background-position-y: 0px;
+	}
+}
+
+.education__title-item {
+	color: #006cb4;
+
+	& span {
+		color: #000000;
+	}
+}
+
+@media (min-width: 900px) {
+	.education__title {
+		padding-left: 13%;
+
+		&::before {
+			content: "";
+			width: 64px;
+    		height: 65px;
+		    background-position-y: -122px;
+		    background-position-x: -4px;
+		}
+	}
 }

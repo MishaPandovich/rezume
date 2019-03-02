@@ -1,0 +1,28 @@
+.profile__title {
+	&::before {
+		content: "";
+	    background: url('../images/sprite.png') no-repeat;
+	    background-size: cover;
+	    background-position-y: -189px;
+	}
+}
+
+@media (min-width: 900px) {
+	.profile__title {
+	    padding-left: 21%;
+
+		&::before {
+			content: "";
+			width: 64px;
+		    height: 65px;
+		    background-position-y: -243px;
+		    background-position-x: -4px;
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.profile__title {
+	    padding-left: 18%;
+	}
+}

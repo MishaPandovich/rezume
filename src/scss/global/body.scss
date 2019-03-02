@@ -3,31 +3,19 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-.flex-wrapper {
-	border: 1px solid red;
-	/////////////
-	display: flex;
-}
-
-.sidebar {
-	border: 1px solid green;
-	/////////////////
-	width: 45%;
-}
-
-.content {
-	border: 1px solid pink;
-	////////////////
-	display: flex;
-	flex-direction: column;
+/*1340 править */
+body {
+	width: 1340px;
+	margin: auto;
+	border: 1px solid
 }
 
 .title {
+	display: flex;
 	position: relative;
 	padding-left: 50px;
 	font-family: 'MyriadPro-Bold', sans-serif;
-	font-size: 35px;
+	font-size: 25px;
     font-weight: bold;
     color: #006cb4;
     text-transform: uppercase;
@@ -35,7 +23,7 @@ body {
     &::before {
 		content: "";
 		position: absolute;
-		top: -5px;
+    	top: -10px;
     	left: 0;
 		width: 50px;
 		height: 50px;
@@ -46,11 +34,11 @@ body {
 }
 
 .line {
-	position: absolute;
-    top: 17px;
-    width: 100px;
+	position: relative;
+    top: 13px;
+    width: 100%;
     height: 3px;
-    margin-left: 10px;
+    margin-left: 5px;
     background: #006cb4;
 }
 
@@ -59,17 +47,19 @@ body {
 	font-size: 14px;
 }
 
+/*---------------------общие стили для заголовков и текстов списка-----------------------*/
+
 .title-item {
 	margin-bottom: 0;
 	font-family: 'MyriadPro-Bold', sans-serif;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 15px;
 	text-transform: uppercase;
 
 	& span {
-	    margin-left: 10px;
+	    margin-left: 5px;
 	    font-family: MyriadPro-Redular,sans-serif;
-	    font-size: 25px;
+		font-size: 12px;
 	    font-weight: 400;
 	    text-transform: initial;
 	}
@@ -81,7 +71,7 @@ body {
 
 	font-family: MyriadPro-Redular,sans-serif;
 	font-weight: normal;
-    font-size: 24.5px;
+	font-size: 15px;
 	text-transform: uppercase;
 }
 
@@ -89,4 +79,109 @@ body {
 	font-family: MyriadPro-Redular,sans-serif;
 	font-weight: normal;
 	font-size: 14px;
+}
+
+/*---------------------общие стили для списков------------------------------*/
+
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.list__item {
+	position: relative;
+	margin-top: 30px;
+    padding-left: 25px;
+
+	&::before {
+		content: "";
+	    position: absolute;
+	    top: 7px;
+	    left: 0;
+	    width: 10px;
+	    height: 10px;
+	    background: #000;
+	    border-radius: 50%;
+	}
+}
+
+@media (min-width: 500px) {
+	.title-item {
+		font-size: 20px;
+
+		& span {
+			font-size: 20px;
+		}
+	}
+
+	.subtitle {
+		font-size: 20px;
+	}  
+}
+
+/*-----------------------------Сетка--------------------------------------*/
+@media (min-width: 900px) {
+	.flex-wrapper {
+		display: flex;
+	}
+
+	.sidebar {
+		width: 40%;
+	}
+
+	.content {
+		width: 60%
+	}
+
+	.title {
+	    padding-left: 21%;
+
+		&::before {
+			content: "";
+			top: -14px;
+			width: 71px;
+    		height: 65px;
+		}
+	}
+
+	.text {
+	    margin-top: 25px;
+		text-align: left;
+	}
+	
+	.title-item {
+		text-align: left;
+
+		& span {
+			font-size: 16.5px;
+		}
+	}
+	
+	.text__item {
+		text-align: left;
+	}
+
+	.list {
+		margin-top: 8%;
+    	margin-left: 3%;
+	}
+
+	.list__item {
+		&::before {
+			content: "";
+			top: 2px;
+			width: 15px;
+			height: 15px;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.title-item {
+
+		& span {
+			font-size: 20px;
+		}
+	}
 }

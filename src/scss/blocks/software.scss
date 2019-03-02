@@ -1,5 +1,5 @@
-.software__wrapper {
-	border: 1px solid red;
+.software {
+	margin-bottom: 15%;
 }
 
 .software__name {
@@ -10,7 +10,7 @@
 
 .software__value {
 	position: relative;
-	width: 200px;
+	width: 250px;
     height: 20px;
     background: #e7e7e7;
 
@@ -21,13 +21,136 @@
 		height: 20px;
 		background: #006cb4;
 	}
+
+	&--photoshop {
+		&::before {
+			content: "";
+			width: 230px;
+		}
+	}
+
+	&--dreamweaver {
+		&::before {
+			content: "";
+    		width: 215px;
+		}
+	}
+
+	&--illustrator {
+		&::before {
+			content: "";
+    		width: 185px;
+		}
+	}
+
+	&--after-effects {
+		&::before {
+			content: "";
+			width: 172px;
+		}
+	}
+
+	&--indesign {
+		&::before {
+			content: "";
+			width: 190px;
+		}
+	}
+
+	&--html-css {
+		&::before {
+			content: "";
+			width: 230px;
+		}
+	}
 }
 
 .software__wrapper {
 	display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .software__inner {
-	margin-right: 20px;
+	margin: auto;
+}
+
+.software__name {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+	.software__title {
+		padding-left: 13%;
+
+		&::before {
+			content: "";
+			width: 64px;
+    		height: 65px;
+    		background-position-y: -62px;
+		    background-position-x: -4px;
+		}
+	}
+
+	.software__inner {
+		margin: 0;
+	}
+
+	.software__name {
+		text-align: left;
+	}
+
+	.software__value {
+	    width: 165px;
+
+		&--photoshop {
+			&::before {
+				content: "";
+			    width: 144px;
+			}
+		}
+
+		&--dreamweaver {
+			&::before {
+				content: "";
+	    		width: 123px;
+			}
+		}
+
+		&--illustrator {
+			&::before {
+				content: "";
+	    		width: 165px;
+			}
+		}
+
+		&--after-effects {
+			&::before {
+				content: "";
+				width: 122px;
+			}
+		}
+
+		&--indesign {
+			&::before {
+				content: "";
+				width: 110px;
+			}
+		}
+
+		&--html-css {
+			&::before {
+				content: "";
+			    width: 100px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.software__value {
+		width: 200px;
+	}	
 }

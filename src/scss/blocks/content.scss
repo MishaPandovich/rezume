@@ -1,0 +1,56 @@
+.content {
+	margin-top: 10%;
+}
+
+.content__education,
+.content__experience,
+.content__software {
+	width: 85%;
+    margin: auto;
+    margin-top: 15%;
+    text-align: justify;
+}
+
+@media (min-width: 600px) {
+	.content__education,
+	.content__experience,
+	.content__software {
+	    margin-top: 10%;
+	}
+}
+
+@media (min-width: 800px) {
+	.content__education,
+	.content__experience,
+	.content__software {
+		width: 75%;
+	}
+}
+
+@media (min-width: 900px) {
+	.content {
+    	margin-top: 5%;
+	}
+
+	.content__education,
+	.content__experience,
+	.content__software {
+		width: 87%;
+		margin-top: 12%;
+		padding-left: 3%;
+    	box-sizing: border-box;
+	}
+
+	.content__education {
+		margin-top: 0;
+	}
+}
+
+
+@media (min-width: 1000px) {
+	.content__education,
+	.content__experience,
+	.content__software {
+		width: 90%;
+	}
+}

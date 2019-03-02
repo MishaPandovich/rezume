@@ -1,0 +1,34 @@
+.sidebar__profile,
+.sidebar__contact,
+.sidebar__skills {
+	width: 85%;
+    margin: auto;
+    margin-top: 15%;
+    text-align: justify;
+}
+
+@media (min-width: 600px) {
+	.sidebar__profile,
+	.sidebar__contact,
+	.sidebar__skills {
+	    margin-top: 10%;
+	}
+}
+
+@media (min-width: 800px) {
+	.sidebar__profile,
+	.sidebar__contact,
+	.sidebar__skills {
+		width: 75%;
+	}
+}
+
+@media (min-width: 900px) {
+	.sidebar .sidebar__profile,
+	.sidebar .sidebar__contact,
+	.sidebar .sidebar__skills {
+		width: 84%;
+    	margin-left: 12%;
+    	margin-top: 18%;
+	}
+}

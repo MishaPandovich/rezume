@@ -40,3 +40,29 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+@media (min-width: 900px) {
+	.basic-info__userpic {
+		margin-top: 17%;
+    	margin-left: 33%;
+	}
+
+	.basic-info__name {
+    	margin-left: 28%;
+    	font-size: 35px;
+    	text-align: left;
+	}
+
+	.basic-info__surname {
+		margin-left: 27%;
+	    margin-top: -4px;
+	    font-size: 40px;
+	    text-align: left;
+	    letter-spacing: 0.5px;
+	}
+
+	.basic-info__position {
+		text-align: left;
+    	margin-left: 34%;
+	}
+}

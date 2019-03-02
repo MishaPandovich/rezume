@@ -1,4 +1,15 @@
+.contact__title {
+	margin-bottom: 30px;
+
+	&::before {
+		content: "";
+    	background-position-y: -143px;
+	}
+}
+
 .contact__text {
+	margin-top: 20px;
+
 	font-family: 'MyriadPro-Bold', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -9,5 +20,112 @@
 	    color: #000000;
 	    font-weight: normal;
 	    text-transform: initial;
+	}
+
+	&--address {
+		& span {
+			margin-left: 20px;
+		}
+	}
+
+	&--email {
+		& span {
+    		margin-left: 46px;
+		}
+	}
+
+	&--phone {
+		& span {
+    		margin-left: 44px;
+		}
+	}
+
+	&--website {
+		& span {
+    		margin-left: 29px;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.contact__text {
+	    font-size: 18px;
+
+		&--address {
+			& span {
+				margin-left: 70px;
+			}
+		}
+
+		&--email {
+			& span {
+	      		margin-left: 100px;
+			}
+		}
+
+		&--phone {
+			& span {
+	    		margin-left: 98px
+			}
+		}
+
+		&--website {
+			& span {
+	    	    margin-left: 83px;
+			}
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.contact__text {
+
+		&--address {
+			& span {
+				margin-left: 46px;
+			}
+		}
+
+		&--email {
+			& span {
+	      		margin-left: 75px;
+			}
+		}
+
+		&--phone {
+			& span {
+	    		margin-left: 74px
+			}
+		}
+
+		&--website {
+			& span {
+    			margin-left: 59px;
+			}
+		}
+	}
+
+	.contact__title {
+		margin-top: 20%;
+
+		&::before {
+			content: "";
+		    top: -16px;
+		    left: 0;
+		    width: 64px;
+		    height: 65px;
+		    background-position-y: -183px;
+		    background-position-x: -4px;
+		}
+	}
+
+	.contact__wrapper .contact__text {
+		font-size: 17px; 
+	}
+}
+
+@media (min-width: 1100px) {
+	.contact__title {
+	    padding-left: 18%;
 	}
 }

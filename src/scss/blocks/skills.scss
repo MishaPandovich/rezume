@@ -1,18 +1,30 @@
 .skills__name {
 	font-family: 'MyriadPro-Regular', sans-serif;
-	text-align: center;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 
+.skills__wrapper {
+	margin-top: 10%;
+}
+
+.skills__title {
+	&::before {
+		content: "";
+	    top: -12px;
+	    left: 0;
+	    background-position-y: -235px;
+	}
+}
+
 .slills__value {
-	margin: auto;
-    width: 300px;
-    
+    width: 260px;
+
 	& span {
 	    display: inline-block;
 	    width: 15px;
 	    height: 15px;
-	    margin-right: 10px;
+	    margin-right: 2.5%;
 	    background: #e7e7e7;
 	    border-radius: 50%;
 	}
@@ -22,3 +34,40 @@
 	}
 }
 
+@media (min-width: 600px) {
+	.skills__wrapper {
+		margin-top: 7%;
+	}
+}
+
+@media (min-width: 900px) {
+	.skills__title {
+		&::before {
+			content: "";
+		    top: -16px;
+		    left: 0;
+		    width: 64px;
+		    height: 65px;
+    		background-position-y: -303px;
+		    background-position-x: -4px;
+		}
+	}
+
+	.skills__wrapper {
+		width: 95%;
+	}
+
+	.skills__wrapper .skills__name {
+		text-align: center;
+	}
+
+	.slills__value {
+    	margin: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+	.skills__title {
+	    padding-left: 18%;
+	}
+}

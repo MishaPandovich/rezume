@@ -1,13 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Source+Sans+Pro" rel="stylesheet">
-    <link href="app.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="app.css" rel="stylesheet"></head>
-  <body>
-    <!--include components/search-->
-    <!--include components/calendar-->
-    <!--include components/videoplayer-->
+  <head><link href="app.css" rel="stylesheet"></head>
+  <body class="flex-wrapper">
+    <section class="sidebar">
+      <section class="basic-info sidebar__basic-info">
+        <div class="basic-info__userpic">
+          <div class="basic-info__img"></div>
+        </div>
+        <p class="basic-info__name">Name here</p>
+        <p class="basic-info__surname">Surname</p>
+        <p class="basic-info__position">Graphic designer</p>
+      </section>
+      <section class="profile sidebar__profile">
+        <h1 class="title profile__title">Profile <span class="line profile__line"></span></h1>
+        <p class="text profile__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <b>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</b></p>
+      </section>
+      <section class="contact sidebar__contact">
+        <h1 class="title contact__title">Contact<span class="line contact__line"></span></h1>
+        <div class="contact__wrapper">
+          <p class="contact__text contact__text--address">Address <span>Main Street, City.</span></p>
+          <p class="contact__text contact__text--email">E-mail<span>contact@domain.com</span></p>
+          <p class="contact__text contact__text--phone">Phone<span>555-555-555</span></p>
+          <p class="contact__text contact__text--website">Website<span>www.yourweb.com</span></p>
+        </div>
+      </section>
+      <section class="skills sidebar__skills">
+        <h1 class="title skills__title">Skills<span class="line skills__line"></span></h1>
+        <div class="skills__wrapper">
+          <p class="skills__name">Creative</p>
+          <div class="slills__value"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span></div>
+          <p class="skills__name">Teamwork</p>
+          <div class="slills__value"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+          <p class="skills__name">Innovate</p>
+          <div class="slills__value"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <p class="skills__name">Communication</p>
+          <div class="slills__value"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+        </div>
+      </section>
+    </section>
+    <section class="content">
+      <section class="education content__education">
+        <h1 class="title education__title">Education<span class="line education__line"></span></h1>
+        <ul class="list education__list">
+          <li class="list__item education__item">
+            <h2 class="title-item education__title-item">Master Degree<span>// Feb 2011 - Jun 2014</span></h2>
+            <h3 class="subtitle education__subtitle">University name</h3>
+            <p class="text-item education__text-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+          </li>
+          <li class="list__item education__item">
+            <h2 class="title-item education__title-item">Master Degree<span>// Feb 2011 - Jun 2014</span></h2>
+            <h3 class="subtitle education__subtitle">University name</h3>
+            <p class="text-item education__text-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+          </li>
+          <li class="list__item education__item">
+            <h2 class="title-item education__title-item">Master Degree<span>// Feb 2011 - Jun 2014</span></h2>
+            <h3 class="subtitle education__subtitle">University name</h3>
+            <p class="text-item education__text-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+          </li>
+          <li class="list__item education__item">
+            <h2 class="title-item education__title-item">Master Degree<span>// Feb 2011 - Jun 2014</span></h2>
+            <h3 class="subtitle education__subtitle">University name</h3>
+            <p class="text-item education__text-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="experience content__experience">
+        <h1 class="title experience__title">Experience<span class="line experience__line"></span></h1>
+        <ul class="list experience__list">
+          <li class="list__item experience__item">
+            <h2 class="title-item experience__title-item">Company name<span>// Feb 2011 - Jun 2014</span></h2>
+            <h3 class="subtitle experience__subtitle">Your job here</h3>
+            <p class="text-item experience__text-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+          </li>
+          <li class="list__item experience__item">
+            <h2 class="title-item experience__title-item">Company name<span>// Feb 2011 - Jun 2014</span></h2>
+            <h3 class="subtitle experience__subtitle">Your job here</h3>
+            <p class="text-item experience__text-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+          </li>
+          <li class="list__item experience__item">
+            <h2 class="title-item experience__title-item">Company name<span>// Feb 2011 - Jun 2014</span></h2>
+            <h3 class="subtitle experience__subtitle">Your job here</h3>
+            <p class="text-item experience__text-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="software content__software">
+        <h1 class="title software__title">Software<span class="line software__line"></span></h1>
+        <div class="software__wrapper">
+          <div class="software__inner">
+            <p class="software__name software__name--photoshop">Photoshop</p>
+            <div class="software__value software__value--photoshop"></div>
+          </div>
+          <div class="software__inner">
+            <p class="software__name software__name--dreamweaver">Dreamweaver</p>
+            <div class="software__value software__value--dreamweaver"></div>
+          </div>
+          <div class="software__inner">
+            <p class="software__name software__name--illustrator">Illustrator</p>
+            <div class="software__value software__value--illustrator"></div>
+          </div>
+          <div class="software__inner">
+            <p class="software__name software__name--after-effects">After effects</p>
+            <div class="software__value software__value--after-effects"></div>
+          </div>
+          <div class="software__inner">
+            <p class="software__name software__name--indesign">Indesign</p>
+            <div class="software__value software__value--indesign"></div>
+          </div>
+          <div class="software__inner">
+            <p class="software__name software__name--html-css">Html&Css3</p>
+            <div class="software__value software__value--html-css"></div>
+          </div>
+        </div>
+      </section>
+    </section>
   <script type="text/javascript" src="app.js"></script></body>
 </html>

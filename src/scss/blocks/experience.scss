@@ -1,5 +1,26 @@
+.experience__title {
+	&::before {
+		content: "";
+	    background-position-y: -46px;
+	}
+}
+
 .experience__list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+@media (min-width: 900px) {
+	.experience__title {
+		padding-left: 13%;
+
+		&::before {
+			content: "";
+			width: 64px;
+    		height: 65px;
+		    background-position-y: 0px;
+		    background-position-x: -4px;
+		}
+	}
 }

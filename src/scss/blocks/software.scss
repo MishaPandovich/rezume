@@ -1,0 +1,33 @@
+.software__wrapper {
+	border: 1px solid red;
+}
+
+.software__name {
+	font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 15px;
+	text-transform: uppercase;
+}
+
+.software__value {
+	position: relative;
+	width: 200px;
+    height: 20px;
+    background: #e7e7e7;
+
+    &::before {
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 20px;
+		background: #006cb4;
+	}
+}
+
+.software__wrapper {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.software__inner {
+	margin-right: 20px;
+}

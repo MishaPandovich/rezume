@@ -1,0 +1,13 @@
+.contact__text {
+	font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #006cb4;
+    text-transform: uppercase;
+
+    & span {
+	    color: #000000;
+	    font-weight: normal;
+	    text-transform: initial;
+	}
+}

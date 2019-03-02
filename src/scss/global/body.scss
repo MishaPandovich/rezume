@@ -22,3 +22,71 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+.title {
+	position: relative;
+	padding-left: 50px;
+	font-family: 'MyriadPro-Bold', sans-serif;
+	font-size: 35px;
+    font-weight: bold;
+    color: #006cb4;
+    text-transform: uppercase;
+
+    &::before {
+		content: "";
+		position: absolute;
+		top: -5px;
+    	left: 0;
+		width: 50px;
+		height: 50px;
+		background: url('../images/sprite.png') no-repeat;
+	    background-size: cover;
+	    background-position-y: 0;
+	}
+}
+
+.line {
+	position: absolute;
+    top: 17px;
+    width: 100px;
+    height: 3px;
+    margin-left: 10px;
+    background: #006cb4;
+}
+
+.text {
+	font-family: 'MyriadPro-Regular', sans-serif;
+	font-size: 14px;
+}
+
+.title-item {
+	margin-bottom: 0;
+	font-family: 'MyriadPro-Bold', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+
+	& span {
+	    margin-left: 10px;
+	    font-family: MyriadPro-Redular,sans-serif;
+	    font-size: 25px;
+	    font-weight: 400;
+	    text-transform: initial;
+	}
+}
+
+.subtitle {
+	margin-top: 5px;
+    margin-bottom: 0;
+
+	font-family: MyriadPro-Redular,sans-serif;
+	font-weight: normal;
+    font-size: 24.5px;
+	text-transform: uppercase;
+}
+
+.text-item {
+	font-family: MyriadPro-Redular,sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+}

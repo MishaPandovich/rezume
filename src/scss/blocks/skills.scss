@@ -1,0 +1,24 @@
+.skills__name {
+	font-family: 'MyriadPro-Regular', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.slills__value {
+	margin: auto;
+    width: 300px;
+    
+	& span {
+	    display: inline-block;
+	    width: 15px;
+	    height: 15px;
+	    margin-right: 10px;
+	    background: #e7e7e7;
+	    border-radius: 50%;
+	}
+
+	& span.active {
+		background: #0070ba;
+	}
+}
+

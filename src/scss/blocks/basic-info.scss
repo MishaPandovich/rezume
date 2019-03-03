@@ -66,3 +66,29 @@
     	margin-left: 34%;
 	}
 }
+
+@media (min-width: 1340px) {
+	.basic-info__userpic {
+    	margin-top: 18%;
+    	width: 226px;
+    }
+
+	.basic-info__img {
+	    width: 224px;
+    	height: 224px;
+	}
+
+	.basic-info__name {
+		font-size: 50px;
+	    margin-top: 6.5%;
+	    letter-spacing: 1px;
+	}
+
+	.basic-info__surname {
+		font-size: 60px;
+	}
+
+	.basic-info__position {
+		font-size: 23px;
+	}
+}

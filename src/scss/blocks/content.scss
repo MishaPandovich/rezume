@@ -54,3 +54,21 @@
 		width: 90%;
 	}
 }
+
+@media (min-width: 1340px) {
+	.content {
+		margin-top: 0;
+	}
+
+	.content__education,
+	.content__experience,
+	.content__software {
+	    width: 85%;
+    	padding-left: 0;
+    	margin-left: 7%;
+	}
+
+	.content__education {
+		width: 85%;
+	}
+}

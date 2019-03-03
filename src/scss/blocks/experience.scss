@@ -24,3 +24,28 @@
 		}
 	}
 }
+
+@media (min-width: 1340px) {
+	.experience.content__experience {
+		width: 85%;
+		margin-top: 9%;
+	}
+
+	.list.experience__list {
+		margin-top: 61px;
+	}
+
+	.list__item.experience__item {
+		margin-top: 15px;
+	}
+
+	.experience__title {
+		padding-left: 15%;
+    	font-size: 38.5px;
+
+		&::before {
+			content: "";
+			top: -28px;
+		}
+	}
+}

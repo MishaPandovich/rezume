@@ -5,9 +5,8 @@ body {
 }
 /*1340 править */
 body {
-	width: 1340px;
+	width: 100%;
 	margin: auto;
-	border: 1px solid
 }
 
 .title {
@@ -183,5 +182,66 @@ body {
 		& span {
 			font-size: 20px;
 		}
+	}
+}
+
+@media (min-width: 1340px) {
+	.title {
+	    padding-left: 21%;
+
+		&::before {
+			content: "";
+		    width: 100px;
+		    height: 93px;
+		}
+	}
+
+	.line {
+		top: 18px;
+		height: 6px;
+		margin-left: 15px;
+	}
+
+	.text {
+    	margin-top: 34px;
+	}
+
+	.list {
+	    margin-top: 6.5%;
+		margin-left: 2.5%;
+	}
+
+	.list__item {
+		margin-top: 16px;
+    	padding-left: 45px;
+
+    	&::before {
+		    content: "";
+		    top: 7px;
+		    width: 20px;
+		    height: 20px;
+		}
+	}
+
+	.title-item {
+	    margin-top: 11px;
+		font-size: 24px;
+
+		& span {
+			font-size: 25px;
+    		margin-left: 16px;
+		}
+	}
+
+	.text-item {
+	    width: 97%;
+	    margin-top: 11px;
+	    font-size: 15px;
+	    line-height: 19px;
+	}
+
+	.subtitle {
+	    font-size: 23px;
+	    margin-top: 11px;
 	}
 }

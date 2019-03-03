@@ -154,3 +154,41 @@
 		width: 200px;
 	}	
 }
+
+@media (min-width: 1340px) {
+	.software.content__software {
+		width: 85%;
+	}
+
+	.software__title {
+		font-size: 39px;
+    	margin-top: -4px;
+    	padding-left: 15%;
+
+    	&::before {
+			content: "";
+			top: -21px;
+    		background-position-y: -104px;
+    	}
+	}
+
+	.software__wrapper {
+		width: 98%;
+    	margin-left: 2%;
+    	margin-top: -4px;
+	}
+	
+	.software__name {
+		font-size: 23px;
+	}
+
+	.software__value {
+    	width: 297px;
+    	height: 29px;
+
+    	&::before {
+			content: "";
+			height: 29px;
+    	}
+	}
+}

@@ -26,3 +26,21 @@
 		}
 	}
 }
+
+@media (min-width: 1340px) {
+	.education.content__education {
+		width: 85%;
+	}
+
+	.education__title {
+		font-size: 41px;
+		padding-left: 15%;
+    	margin-top: 14%;
+
+		&::before {
+			content: "";
+			top: -30px;
+			background-position-y: -186px;
+		}
+	}
+}

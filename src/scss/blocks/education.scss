@@ -15,7 +15,7 @@
 
 @media (min-width: 900px) {
 	.education__title {
-		padding-left: 13%;
+		padding-left: 18%;
 
 		&::before {
 			content: "";
@@ -41,6 +41,17 @@
 			content: "";
 			top: -30px;
 			background-position-y: -186px;
+		}
+	}
+}
+
+@media (min-width: 1800px) {
+	.education__title {
+		font-size: 57px;
+
+		&::before {
+			content: "";
+			background-position-y: -261px;
 		}
 	}
 }

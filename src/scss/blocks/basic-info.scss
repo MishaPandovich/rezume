@@ -92,3 +92,30 @@
 		font-size: 23px;
 	}
 }
+
+@media (min-width: 1800px) {
+	.basic-info__userpic {
+		width: 313px;
+    	padding: 18px;
+	}
+
+	.basic-info__img {
+		width: 311px;
+    	height: 313px;
+	}
+
+	.basic-info__name {
+	    font-size: 72px;
+	    letter-spacing: 1.2px;
+	}
+
+	.basic-info__surname {
+	    font-size: 86px;
+	    margin-top: -10px;
+	}
+
+	.basic-info__position {
+	    font-size: 33px;
+	    margin-top: 11px;
+	}
+}

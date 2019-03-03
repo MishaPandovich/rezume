@@ -3,10 +3,13 @@ body {
 	margin: 0;
 	padding: 0;
 }
-/*1340 править */
+
 body {
 	width: 100%;
+	min-width: 300px;
+	max-width: 2100px;
 	margin: auto;
+	padding-bottom: 10%;
 }
 
 .title {
@@ -243,5 +246,54 @@ body {
 	.subtitle {
 	    font-size: 23px;
 	    margin-top: 11px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.title {
+		&::before {
+			content: "";
+			width: 135px;
+    		height: 115px;
+		}
+	}
+
+	.line {
+    	top: 25px;
+	}
+
+	.list {
+		margin-top: 7%;
+	}
+
+	.list__item {
+		margin-top: 25px;
+    	padding-left: 62px;
+
+    	&::before {
+			content: "";
+			width: 28px;
+    		height: 29px;
+		}
+	}
+
+	.title-item {
+		font-size: 34px;
+
+		& span {
+			font-size: 36px;
+    		margin-left: 23px;
+		}
+	}
+
+	.text-item {
+		margin-top: 18px;
+	    font-size: 21px;
+	    line-height: 26px;
+	}
+
+	.subtitle {
+	    font-size: 32px;
+	    margin-top: 12px;
 	}
 }

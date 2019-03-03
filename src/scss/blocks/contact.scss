@@ -161,3 +161,43 @@
 		}
 	}
 }
+
+@media (min-width: 1800px) {
+	.title.contact__title {
+	    font-size: 55px;
+	    margin-top: 15%;
+
+	    &::before {
+			content: "";
+		    top: -21px;
+		    background-position-y: -397px;
+		}
+	}
+
+	.contact__wrapper {
+	    margin-top: 76px;
+	}
+
+	.contact__wrapper .contact__text {
+	    font-size: 29px;
+	    margin-bottom: 51px;
+	}
+
+	.contact__text {
+		&--address span {
+		    margin-left: 50px;
+		}
+
+		&--email span {
+		    margin-left: 101px;
+		}
+
+		&--phone span {
+		    margin-left: 96px;
+		}
+
+		&--website span {
+		    margin-left: 71px;
+		}
+	}
+}

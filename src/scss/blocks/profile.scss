@@ -49,3 +49,23 @@
 	    width: 451px;
 	}
 }
+
+@media (min-width: 1800px) {
+	.profile .profile__title {
+	    font-size: 54px;
+	    padding-left: 21%;
+
+	    &::before {
+			content: "";
+			top: -32px;
+			background-position-y: -516px;
+		}
+	}
+
+	.profile__text {
+    	margin-top: 44px;
+    	font-size: 23px;
+    	line-height: 28px;
+    	width: 654px;
+	}
+}

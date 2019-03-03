@@ -13,7 +13,7 @@
 
 @media (min-width: 900px) {
 	.experience__title {
-		padding-left: 13%;
+		padding-left: 18%;
 
 		&::before {
 			content: "";
@@ -46,6 +46,29 @@
 		&::before {
 			content: "";
 			top: -28px;
+		}
+	}
+}
+
+@media (min-width: 1800px) {
+	.experience__title {
+	    padding-left: 15%;
+	    margin-top: 11%;
+	    font-size: 55px;
+
+	    &::before {
+			content: "";
+			background-position-y: -8px;
+		}
+	}
+
+	.list.experience__list {
+	    margin-top: 93px;
+	}
+
+	.experience__title-item {
+		& span {
+			margin-left: 35px;
 		}
 	}
 }

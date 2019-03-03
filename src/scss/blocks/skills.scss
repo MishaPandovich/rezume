@@ -107,7 +107,7 @@
 	}
 
 	.slills__value {
-		width: 77%;
+		width: 347px;
 
     	& span {
 			width: 17px;
@@ -115,4 +115,46 @@
 		    margin-right: 12.7px;
     	}
 	}
+}
+
+@media (min-width: 1800px) {
+	.title.skills__title {
+	    font-size: 53px;
+	    margin-top: -1%;
+
+	    &::before {
+			content: "";
+			background-position-y: -653px;
+		}
+	}
+
+	.skills__name {
+		font-size: 32px;
+	}
+
+	.slills__value {
+	    width: 81%;
+	    margin-top: 19px;
+
+	    & span {
+			width: 25px;
+		    height: 25px;
+		    margin-right: 3.5%;
+		}
+	}
+
+	.skills__name {
+		margin-top: 33px;
+	}
+
+	.skills__name:first-child {
+	    margin-top: 66px;
+	}
+}
+
+@media (min-width: 1900px) {
+	.slills__value {
+	    width: 78%;
+	    margin-top: 19px;
+	}	
 }
